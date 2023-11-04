@@ -5,7 +5,6 @@ import Navbar from "../components/Navbar";
 import SlideBar from "../components/SlideBar";
 import Footer from "../components/Footer";
 const images = ["img (1)", "img (2)", "img (3)", "img (4)", "img (5)"];
-import Footer from "@/components/Footer";
 
 const Home = () => {
   return (

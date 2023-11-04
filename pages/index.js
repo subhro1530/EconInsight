@@ -2,10 +2,15 @@
 import React from "react";
 import { Box, ChakraProvider } from "@chakra-ui/react";
 import Navbar from "../components/Navbar";
-import SlideBar from "../components/SlideBar";
+import ImageSlider from "../components/ImageSlider";
 import Footer from "../components/Footer";
-const images = ["img (1)", "img (2)", "img (3)", "img (4)", "img (5)"];
-import Footer from "@/components/Footer";
+const images = [
+  "img (1).jpg",
+  "img (2).jpg",
+  "img (3).jpg",
+  "img (4).jpg",
+  "img (5).jpg",
+];
 
 const Home = () => {
   return (
@@ -13,7 +18,7 @@ const Home = () => {
       {/* Your other page content goes here */}
       <Navbar />
       <ChakraProvider>
-          <SlideBar images={images} />
+        <ImageSlider images={images} />
       </ChakraProvider>
       <Footer />
     </div>

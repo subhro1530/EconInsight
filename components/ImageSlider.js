@@ -1,6 +1,7 @@
-// Slidebar.js
 import React, { useState } from "react";
 import { Box, Button, Image } from "@chakra-ui/react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const ImageSlider = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -30,7 +31,7 @@ const ImageSlider = ({ images }) => {
         top="50%"
         transform="translateY(-50%)"
       >
-        Previous
+        <FontAwesomeIcon icon={faArrowLeft} />
       </Button>
       <Button
         onClick={nextImage}
@@ -39,7 +40,7 @@ const ImageSlider = ({ images }) => {
         top="50%"
         transform="translateY(-50%)"
       >
-        Next
+        <FontAwesomeIcon icon={faArrowRight} />
       </Button>
     </Box>
   );

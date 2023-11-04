@@ -5,7 +5,8 @@ import { Box, chakra, Flex, Link, Text, Stack, HStack } from "@chakra-ui/react";
 const Footer = () => {
   return (
     <chakra.footer
-      bgGradient="linear(to-r, teal.500, cyan.500)"
+      bgGradient="linear(black)"
+      bgColor="black"
       color="white"
       py="4"
     >
@@ -17,13 +18,16 @@ const Footer = () => {
       >
         {/* Social Links */}
         <HStack spacing="4">
-          <Link href="#" target="_blank">
+          <Link href="https://twitter.com/ShaswataSaha10" target="_blank">
             <Box as="img" src="/twitter-icon.png" alt="Twitter" boxSize="8" />
           </Link>
-          <Link href="#" target="_blank">
+          <Link
+            href="https://www.linkedin.com/in/shaswata-saha-74b209251/"
+            target="_blank"
+          >
             <Box as="img" src="/linkedin-icon.png" alt="LinkedIn" boxSize="8" />
           </Link>
-          <Link href="#" target="_blank">
+          <Link href="https://github.com/subhro1530" target="_blank">
             <Box as="img" src="/github-icon.png" alt="GitHub" boxSize="8" />
           </Link>
         </HStack>

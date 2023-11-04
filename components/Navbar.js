@@ -89,7 +89,7 @@ const Navbar = () => {
 
       {/* Dropdown */}
       <Menu>
-        <MenuButton as={Button} mx="2">
+        <MenuButton fontWeight="400" as={Button} mx="2">
           Links
         </MenuButton>
         <MenuList>

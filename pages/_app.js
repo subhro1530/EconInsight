@@ -2,12 +2,13 @@
 
 import Head from "next/head";
 import "../styles/globals.css"; // Import your global styles
+import { ChakraProvider } from "@chakra-ui/react";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div>
-      <Component {...pageProps} />
-    </div>
+      <ChakraProvider>
+        <Component {...pageProps} />
+      </ChakraProvider>
   );
 }
 

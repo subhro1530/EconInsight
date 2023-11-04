@@ -11,25 +11,27 @@ import {
   MenuList,
   MenuItem,
 } from "@chakra-ui/react";
-import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
   return (
-    <Flex
-      className={styles.navbar}
-      align="center"
-      justify="space-between"
-      p="4"
-    >
+    <Flex align="center" justify="space-between" p="4">
       {/* Logo */}
-      <Image src="/vert.png" alt="Logo" boxSize="40px" mr="2" />
+      <Image src="/vert.png" alt="Logo" w="220px" mr="5" />
 
       {/* Links */}
       <Box display={["none", "none", "flex"]}>
-        <Button mx="2">Home</Button>
-        <Button mx="2">About</Button>
-        <Button mx="2">Services</Button>
-        <Button mx="2">Contact</Button>
+        <Button mx="2" color="black" bg="none" fontSize="16px">
+          Home
+        </Button>
+        <Button mx="2" color="black" bg="none" fontSize="16px">
+          About
+        </Button>
+        <Button mx="2" color="black" bg="none" fontSize="16px">
+          Services
+        </Button>
+        <Button mx="2" color="black" bg="none" fontSize="16px">
+          Contact
+        </Button>
       </Box>
 
       {/* Spacer */}

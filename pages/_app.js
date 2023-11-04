@@ -6,7 +6,9 @@ import "../styles/globals.css"; // Import your global styles
 function MyApp({ Component, pageProps }) {
   return (
     <div>
-      <Component {...pageProps} />
+      <ChakraProvider>
+        <Component {...pageProps} />
+      </ChakraProvider>
     </div>
   );
 }

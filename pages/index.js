@@ -20,7 +20,7 @@ const Home = () => {
       {/* Your other page content goes here */}
       <ChakraProvider>
         <Navbar />
-        {/* <ImageSlider images={images} /> */}
+        <ImageSlider images={images} />
         <ManageOptions />
         <Programmes />
         <Footer />

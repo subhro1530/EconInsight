@@ -4,6 +4,8 @@ import { Box, ChakraProvider } from "@chakra-ui/react";
 import Navbar from "../components/Navbar";
 import ImageSlider from "../components/ImageSlider";
 import Footer from "../components/Footer";
+import ManageOptions from "@/components/ManageOptions";
+import Programmes from "@/components/Programmes";
 const images = [
   "img (1).jpg",
   "img (2).jpg",
@@ -18,7 +20,9 @@ const Home = () => {
       {/* Your other page content goes here */}
       <ChakraProvider>
         <Navbar />
-        <ImageSlider images={images} />
+        {/* <ImageSlider images={images} /> */}
+        <ManageOptions />
+        <Programmes />
         <Footer />
       </ChakraProvider>
     </div>

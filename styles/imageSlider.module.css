@@ -1,0 +1,38 @@
+/* ImageSlider */
+.container {
+  display: flex;
+}
+.imageSlider {
+  width: 80% !important;
+  position: relative !important;
+  overflow: hidden !important;
+  background-color: midnightblue !important;
+}
+
+.page-turn {
+  transform: rotateX(30deg) rotateY(270deg);
+  opacity: 0.5;
+}
+
+.changeButton {
+  position: absolute !important;
+  top: 50% !important;
+}
+.image {
+  position: relative !important;
+  height: 100vh !important;
+  width: 100vw !important;
+  transition: all 1s ease-in-out !important;
+}
+
+.whatsNewSection {
+  flex: 1; /* Occupy remaining space */
+  padding: 16px;
+  background: linear-gradient(rgb(137, 117, 250), rgb(59, 59, 138));
+  height: 100vh !important;
+}
+
+.whatsNewSection ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
